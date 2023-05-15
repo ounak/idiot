@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+            font-family: Arial, sans-serif;
+        }
+
+        body::before {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            content: "";
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 165, 1) 100%);
+            ;
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 2000px;
+            z-index: -1;
+        }
+
+
+        a {
+            color: black;
+            border: 1px solid black;
+            text-decoration: none;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all;
+            transition-duration: .1s;
+
+        }
+
+        #yes:hover {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #no:hover {
+            animation-name: no;
+            position: relative;
+            top: 120px;
+            bottom: 120px;
+        }
+
+        .phone {
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-grow: 2;
+
+        }
+
+        @media(max-width:1025px) {
+
+            .phone {
+                display: block;
+            }
+
+            .container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Are you an Idiot?</h1>
+        <div class="box">
+            <a id="yes" href="yes.html">yes</a>
+            <a id="no" href="#">no</a>
+        </div>
+
+    </div>
+    <div class="phone">
+        <h1>Please open it on laptop!!</h1>
+    </div>
+</body>
+
+</html>

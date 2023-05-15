@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rest</title>
+  <style>
+    /* Center the content */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    body::before{
+        top: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,165,1) 100%);;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 2000px;
+        z-index: -1;
+    }
+    .phone{
+        display :none;
+    }
+    
+    /* Style the text */
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    /* Style the emoji */
+    .emoji {
+      font-size: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1><span class="emoji">&#x1F60E;</span> I know it.</h1>
+  </div>
+</body>
+</html>
